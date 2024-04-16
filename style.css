@@ -1,4 +1,4 @@
- *{
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -150,7 +150,9 @@ a {
     border-radius: 12px;
 }
 
-
+.card-title { 
+    margin-left: 150px;
+}
 .image-title{
     font-weight: 600;
     margin-top: 40px;
@@ -278,22 +280,18 @@ a {
 }
 
 
-
-
-
-
-
-footer{
+footer {
     background-color: #29B24E;
     width: 100%;
-    max-height: 250px;
+    max-height: 950px;
     border-radius: 12px;
+    margin-bottom: 30px;
 }
 .footer-container{
     display: flex;
     flex-direction: column;
     max-width: 1400px;
-    max-height: 150px;
+    max-height: 180px;
     color: white;
     margin: 0 auto;
     padding: 10px;
@@ -306,22 +304,23 @@ footer{
 }
 .footer-list-box{
     display: flex;
+    justify-content: center;
+    gap: 35px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+.footer-list-box2 { 
+    display: flex;
+    justify-content: center;
     gap: 35px;
     font-size: 14px;
     color: white;
 }
 
-.bottom-footer-box::before{
-    content: "";
-    max-width: 100%;
-    height: 1px;
-    background-color: white;
-    margin: 0px 0px 20px 0px;
+.bottom-footer {
+    justify-content: center;
     display: flex;
-    flex-direction: column;
-    opacity: 50%;
-}
-.bottom-footer-box{
     text-align: center;
     font-size: 12px;
     margin: 10px 0px 10px 0px;
@@ -511,20 +510,20 @@ footer{
     margin: 0 auto;
     padding: 10px;
 }
-.top-footer-box{
+.footer-box {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     padding: 20px;
 }
-.footer-navigation-list-box{
+.footer-navigation-list-box {
     display: flex;
     gap: 35px;
     font-size: 14px;
     color: white;
 }
 
-.bottom-footer::before{
+.bottom-footer::before { 
     content: "";
     max-width: 100%;
     height: 1px;
@@ -534,13 +533,13 @@ footer{
     flex-direction: column;
     opacity: 50%;
 }
-.bottom-footer{
+.bottom-footer {
     text-align: center;
     font-size: 12px;
     margin: 10px 0px 10px 0px;
 }
 
-.home-internal-container{
+.home-internal-container {
     max-width: 1400px;
     width: 100%;
     display: flex;
@@ -548,19 +547,19 @@ footer{
     gap: 20px;
     margin: 40px auto;
 }
-.home-internal-container-image{
+.home-internal-container-image {
     width: 100%;
     flex: 1;
     max-height: 700px;
     box-shadow: 0px 4px 18px 0px #C2C2C24D;
     border-radius: 20px;
 }
-.internal-image{
+.internal-image {
     border-radius: 20px;
     max-width: 690px;
     height: 700px;
 }
-.home-internal-container-content{
+.home-internal-container-content {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -572,27 +571,27 @@ footer{
     padding: 20px;
     gap: 25px;
 }
-.content-title{
+.content-title {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     color: grey;
     vertical-align: center;
 }
-.view-icon{
+.view-icon {
     position: absolute;
     top: 23px;
     right: 100px;
 }
-.location-text{
+.location-text {
     font-size: 14px;
     opacity: 60%;
 }
-.location-text-description{
+.location-text-description {
     font-size: 14px;
     opacity: 80%;
 }
-.location-text-description::after{
+.location-text-description::after { 
     content: "";
     display: flex;
     margin:20px 0px 5px 0px;
@@ -600,52 +599,52 @@ footer{
     height: 1px;
     background-color: #ECECEC;
 }
-.apartment-description{
+.apartment-description {
     font-size: 14px;
     display: flex;
     gap: 25px;
     justify-content: flex-start;
 }
-.description-box::before{
+.description-box::before {
     content: "";
     width: 100%;
     height: 1px;
     background-color: #ECECEC;
     margin: 5px 0px 15px 0px;
 }
-.description-box{
+.description-box {
     display: flex;
     flex-direction: column;
 }
-.description-box-child{
+.description-box-child {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
 }
-.description-box-address{
+.description-box-address {
     display: flex;
     flex: 1;
     flex-direction: column;
     max-width: 160px;
     gap: 10px;
 }
-.description-box-title{
+.description-box-title {
     font-size: 12px;
     opacity: 60%;
 }
-.description-box-content{
+.description-box-content {
     font-size: 14px;
     font-weight: 500;
 }
-.description-box::after{
+.description-box::after {
     content: "";
     width: 100%;
     height: 1px;
     background-color: #ECECEC;
     margin: 25px 0px 15px 0px;
 }
-.message-button{
+.message-button {
     border: 1px solid #29B24E;
     padding: 13px 26px 13px 26px;
     color: #29B24E;
@@ -653,7 +652,7 @@ footer{
     font-size: 15px;
     background-color: white;
 }
-.call-button{
+.call-button {
     border: #29B24E 1px;
     padding: 15px 30px 15px 30px;
     border-radius: 12px;
@@ -661,11 +660,11 @@ footer{
     color: white;
     font-size: 15px;
 }
-.description-box-contact{
+.description-box-contact {
     display: flex;
     justify-content: space-around;
 }
-.description-box-contact-child{
+.description-box-contact-child {
     display: flex;
     gap: 20px;
 }
